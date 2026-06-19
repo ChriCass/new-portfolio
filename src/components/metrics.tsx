@@ -3,7 +3,7 @@ import React from 'react'
 const metrics = () => {
   return (
        <section className="border-t border-b border-white/[0.08] bg-white/[0.015]">
-    <div className="max-w-[1280px] mx-auto px-8 py-12 grid grid-cols-4 gap-8">
+    <div className="max-w-[1280px] mx-auto px-4 lg:px-8 py-12 flex flex-col lg:grid lg:grid-cols-4 gap-8">
       <div>
         <div className="font-mono text-[10px] tracking-[0.16em] text-[#525252] mb-[14px]">REVENUE INFLUENCED</div>
         <div className="text-5xl font-medium tracking-[-0.04em] leading-none text-[#ededed]">£35M<span className="text-green-500">+</span></div>

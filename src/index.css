@@ -4,3 +4,7 @@
 * {
   font-family:'Geist', sans-serif !important;
 }
+
+.swiper-slide {
+    height: auto !important;
+}

@@ -6,6 +6,7 @@ import Metrics from './components/Metrics'
 import StackTerminal from './components/stackTerminal'
 import Experience from './components/experience'
 import About from './components/about'
+import Contact from './components/contact'
 import Footer from './components/footer'
 
 
@@ -19,6 +20,7 @@ function App() {
       <StackTerminal />
       <Experience />
       <About />
+      <Contact />
       <Footer />
     </main>
 

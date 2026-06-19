@@ -2,8 +2,8 @@ import React from 'react'
 
 const stackTerminal = () => {
   return (
-    <section id="stack" className="max-w-7xl mx-auto px-8 pt-35 pb-25">
-      <div className="grid grid-cols-[1fr_1.4fr] gap-20 items-start">
+    <section id="stack" className="max-w-7xl mx-auto px-4 lg:px-8 pt-14 pb-14 lg:pt-35 lg:pb-25">
+      <div className="flex flex-col lg:grid lg:grid-cols-[1fr_1.4fr] gap-20 items-start">
         <div>
           <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/STACK</div>
           <h2 className="text-[56px] font-medium tracking-[-0.04em] leading-none m-0 mb-6 text-[#ededed]">

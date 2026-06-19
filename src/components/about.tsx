@@ -2,14 +2,14 @@ import React from 'react'
 
 const about = () => {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-8 py-35">
-      <div className="grid grid-cols-[1fr_280px] gap-20 items-start">
+    <section id="about" className="max-w-7xl mx-auto px-4 lg:px-8  pt-14 pb-14 lg:py-35">
+      <div className="flex flex-col lg:grid lg:grid-cols-[1fr_280px] gap-20 items-start">
         <div>
           <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/ABOUT</div>
           <h2 className="text-[56px] font-medium tracking-[-0.04em] leading-[1.02] m-0 mb-10 text-[#ededed]">
             A developer who treats <span className="text-[#737373]">commerce as a craft.</span>
           </h2>
-          <div className="grid grid-cols-2 gap-10 text-[#a3a3a3] leading-[1.7] text-[15px]">
+          <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-10 text-[#a3a3a3] leading-[1.7] text-[15px]">
             <p className="m-0">
               Started in 2023 building WordPress sites for Peruvian agencies — small clients, real deadlines, learning what does and doesn't survive contact with production. Two years later I was leading multi-tenant accounting platforms in Laravel; one more, shipping checkout extensions for British DTC founders at 3am London time.
             </p>
@@ -18,7 +18,7 @@ const about = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-4 gap-6 mt-16 pt-8 border-t border-white/8">
+          <div className="mt-5 flex text-center justify-center flex-wrap gap-3 lg:grid lg:grid-cols-4 lg:gap-6 lg:mt-16 pt-8 border-t border-white/8 lg:text-left">
             <div>
               <div className="font-mono text-[10px] tracking-[0.16em] text-[#525252] mb-2">BASED</div>
               <div className="text-base text-[#ededed]">Lima, PE</div>

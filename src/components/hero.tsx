@@ -2,7 +2,7 @@ import React from "react";
 
 const hero = () => {
   return (
-    <section className="relative max-w-[1280px] mx-auto px-8 pt-[120px] pb-[100px] overflow-hidden">
+    <section className="relative max-w-[1280px] mx-auto overflow-hidden px-4 lg:px-8 pt-14 lg:pt-30 pb-14 lg:pb-25">
       {/* subtle grid bg */}
       <div
         className="absolute inset-0 bg-[length:64px_64px] pointer-events-none"
@@ -35,7 +35,7 @@ const hero = () => {
           <span className="cursor inline-block w-[.5em] h-[.9em] bg-[#ededed] align-[-.05em] ml-[.1em]" />
         </h1>
 
-        <div className="grid grid-cols-[1.4fr_1fr] gap-[80px] mt-[80px] pt-12 border-t border-white/[.08]">
+        <div className="flex flex-col lg:grid lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-20  pt-12 border-t border-white/08">
           <p className="m-0 text-[#a3a3a3] text-lg leading-[1.6] max-w-[62ch]">
             Software engineer with 3 years across Liquid, Laravel and Vue.
             Currently at <span className="text-[#ededed]">Step Labs</span> in
