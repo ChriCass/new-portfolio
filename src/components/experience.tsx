@@ -87,7 +87,7 @@ const Experience = () => {
         <div className="flex items-end justify-between mb-18">
           <div>
             <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/EXPERIENCE</div>
-            <h2 className="text-[56px] font-medium tracking-[-0.04em] leading-none m-0 text-[#ededed]">Three years. Four teams.</h2>
+            <h2 className="text-5xl lg:text-[56px] font-medium tracking-[-0.04em] leading-none m-0 text-[#ededed]">Three years. Four teams.</h2>
           </div>
         </div>
 

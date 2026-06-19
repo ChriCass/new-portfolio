@@ -1,12 +1,19 @@
 import React from 'react'
 
+const stats = [
+  { label: 'BASED',     value: 'Peru',       sub: 'UTC−5' },
+  { label: 'LANGUAGES', value: 'ES / EN',         sub: 'C1 · EFSET 64' },
+  { label: 'STUDYING',  value: 'CS & Eng',        sub: 'U. Científica del Sur' },
+  { label: "FOCUS '26", value: 'Checkout Ext.',   sub: 'Functions · CRO' },
+]
+
 const about = () => {
   return (
     <section id="about" className="max-w-7xl mx-auto px-4 lg:px-8  pt-14 pb-14 lg:py-35">
       <div className="flex flex-col lg:grid lg:grid-cols-[1fr_280px] gap-20 items-start">
         <div>
           <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/ABOUT</div>
-          <h2 className="text-[56px] font-medium tracking-[-0.04em] leading-[1.02] m-0 mb-10 text-[#ededed]">
+          <h2 className="text-5xl lg:text-[56px] font-medium tracking-[-0.04em] leading-[1.02] m-0 mb-10 text-[#ededed]">
             A developer who treats <span className="text-[#737373]">commerce as a craft.</span>
           </h2>
           <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-10 text-[#a3a3a3] leading-[1.7] text-[15px]">
@@ -19,26 +26,13 @@ const about = () => {
           </div>
 
           <div className="mt-5 flex text-center justify-center flex-wrap gap-3 lg:grid lg:grid-cols-4 lg:gap-6 lg:mt-16 pt-8 border-t border-white/8 lg:text-left">
-            <div>
-              <div className="font-mono text-[10px] tracking-[0.16em] text-[#525252] mb-2">BASED</div>
-              <div className="text-base text-[#ededed]">Lima, PE</div>
-              <div className="font-mono text-[11px] text-[#737373] mt-0.5">UTC−5</div>
-            </div>
-            <div>
-              <div className="font-mono text-[10px] tracking-[0.16em] text-[#525252] mb-2">LANGUAGES</div>
-              <div className="text-base text-[#ededed]">ES <span className="text-[#525252]">/</span> EN</div>
-              <div className="font-mono text-[11px] text-[#737373] mt-0.5">C1 · EFSET 64</div>
-            </div>
-            <div>
-              <div className="font-mono text-[10px] tracking-[0.16em] text-[#525252] mb-2">STUDYING</div>
-              <div className="text-base text-[#ededed]">CS & Eng</div>
-              <div className="font-mono text-[11px] text-[#737373] mt-0.5">U. Científica del Sur</div>
-            </div>
-            <div>
-              <div className="font-mono text-[10px] tracking-[0.16em] text-[#525252] mb-2">FOCUS '26</div>
-              <div className="text-base text-[#ededed]">Checkout Ext.</div>
-              <div className="font-mono text-[11px] text-[#737373] mt-0.5">Functions · CRO</div>
-            </div>
+            {stats.map(({ label, value, sub }) => (
+              <div key={label}>
+                <div className="font-mono text-[10px] tracking-[0.16em] text-[#525252] mb-2">{label}</div>
+                <div className="text-base text-[#ededed]">{value}</div>
+                <div className="font-mono text-[11px] text-[#737373] mt-0.5">{sub}</div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -53,8 +47,7 @@ const about = () => {
           </div>
           <div className="font-mono text-[11px] text-[#525252] mt-3.5 leading-[1.8]">
             CHRISTIAN CASSAS<br/>
-            B. AREQUIPA, PE<br/>
-            BASED IN LIMA
+            BASED IN PERU, WORKING REMOTELY
           </div>
         </div>
       </div>

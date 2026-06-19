@@ -1,4 +1,13 @@
 import { useState, useEffect } from 'react'
+import ThemeToggle from './ThemeToggle'
+
+const links = [
+  { href: '#work',       label: 'work'       },
+  { href: '#stack',      label: 'stack'      },
+  { href: '#experience', label: 'experience' },
+  { href: '#about',      label: 'about'      },
+  { href: '#contact',    label: 'contact'    },
+]
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -25,14 +34,13 @@ const Header = () => {
 
         {/* nav desktop */}
         <nav className="hidden md:flex gap-7 text-[#a3a3a3]">
-          <a href="#work"       className="hover:text-[#ededed] transition-colors">work</a>
-          <a href="#stack"      className="hover:text-[#ededed] transition-colors">stack</a>
-          <a href="#experience" className="hover:text-[#ededed] transition-colors">experience</a>
-          <a href="#about"      className="hover:text-[#ededed] transition-colors">about</a>
-          <a href="#contact"    className="hover:text-[#ededed] transition-colors">contact</a>
+          {links.map(({ href, label }) => (
+            <a key={href} href={href} className="hover:text-[#ededed] transition-colors">{label}</a>
+          ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-2 text-[#a3a3a3]">
+        <div className="hidden md:flex items-center gap-3 text-[#a3a3a3]">
+          <ThemeToggle />
           <span className="relative inline-block w-2 h-2">
             <span className="absolute inset-0 rounded-full bg-green-500"></span>
             <span className="absolute -inset-[3px] rounded-full bg-green-500/25"></span>
@@ -56,11 +64,9 @@ const Header = () => {
       {/* menu mobile — ocupa todo el dvh restante */}
       {open && (
         <nav className="md:hidden fixed inset-x-0 top-13.25 h-[calc(100dvh-3.3125rem)] bg-[#0a0a0a] px-8 flex flex-col justify-center gap-8 font-mono text-[#a3a3a3]">
-          <a href="#work"       onClick={close} className="text-4xl font-medium text-[#ededed] hover:text-[#a3a3a3] transition-colors">work</a>
-          <a href="#stack"      onClick={close} className="text-4xl font-medium text-[#ededed] hover:text-[#a3a3a3] transition-colors">stack</a>
-          <a href="#experience" onClick={close} className="text-4xl font-medium text-[#ededed] hover:text-[#a3a3a3] transition-colors">experience</a>
-          <a href="#about"      onClick={close} className="text-4xl font-medium text-[#ededed] hover:text-[#a3a3a3] transition-colors">about</a>
-          <a href="#contact"    onClick={close} className="text-4xl font-medium text-[#ededed] hover:text-[#a3a3a3] transition-colors">contact</a>
+          {links.map(({ href, label }) => (
+            <a key={href} href={href} onClick={close} className="text-4xl font-medium text-[#ededed] hover:text-[#a3a3a3] transition-colors">{label}</a>
+          ))}
         </nav>
       )}
     </header>

@@ -9,7 +9,6 @@ const footer = () => {
           <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e]"></span>
           all systems operational
         </div>
-        <div>built with Geist · deployed from Lima</div>
       </div>
     </footer>
   );
