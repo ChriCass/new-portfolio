@@ -1,76 +1,4 @@
-type BulletNode = (string | { highlight: string })[]
-
-interface ExperienceItem {
-  dateStart: string
-  dateEnd: string
-  active?: boolean
-  role: string
-  company: string
-  description: string
-  bullets: BulletNode[]
-  last?: boolean
-}
-
-const experiences: ExperienceItem[] = [
-  {
-    dateStart: 'OCT 2024',
-    dateEnd: 'PRESENT',
-    active: true,
-    role: 'SHOPIFY DEVELOPER · LONDON, UK · REMOTE',
-    company: 'Step Labs',
-    description:
-      'Web development agency serving 7–8 figure DTC brands across UK and US. Shopify Plus, OS 2.0, Theme App Extensions, Checkout Extensibility.',
-    bullets: [
-      ['Architected storefronts for ', { highlight: '80+ DTC brands' }, ', influencing £35M attributable revenue.'],
-      ['Weekly A/B tests on PDP, cart, checkout — ', { highlight: '+30% uplift' }, ' guaranteed / 90d.'],
-      [{ highlight: '+25–40% Lighthouse mobile' }, ' across 10+ themes via LCP / CLS / INP tuning.'],
-      ['Integrated 15+ apps via CLI, Admin & Storefront API (GraphQL).'],
-    ],
-  },
-  {
-    dateStart: 'MAR 2024',
-    dateEnd: 'MAR 2025',
-    role: 'FULL-STACK DEVELOPER · AREQUIPA, PE · HYBRID',
-    company: 'RPU & Asociados',
-    description:
-      'Accounting firm. Led a multi-tenant accounting platform for 5+ companies with SUNAT integration. Laravel MVC + Livewire.',
-    bullets: [
-      ['Real-time cash mgmt with Livewire + Wire UI; ', { highlight: '−70% manual reconciliation' }, '.'],
-      ['Designed ', { highlight: '30+ normalized SQL schemas' }, ' across 8 financial modules.'],
-      [{ highlight: '−40% regression bugs' }, ' via Git-based code review workflows.'],
-      ['Responsive Bootstrap / SCSS UI, ', { highlight: '−25% time-to-rollout' }, '.'],
-    ],
-  },
-  {
-    dateStart: 'NOV 2023',
-    dateEnd: 'FEB 2024',
-    role: 'FULL-STACK DEVELOPER · LAMBAYEQUE, PE · REMOTE',
-    company: 'F5 Solutions',
-    description:
-      'Edtech. Built an online learning platform powering 50+ courses. Laravel + Vue.js + Inertia.js.',
-    bullets: [
-      ['Shipped monolithic Laravel + Inertia stack across ', { highlight: '50+ courses' }, '.'],
-      [{ highlight: '−35% content load time' }, ' via query tuning on 15+ tables.'],
-      ['Accessible, responsive UI across 3+ breakpoints.'],
-      [{ highlight: '20+ features' }, ' shipped in tight agile sprints.'],
-    ],
-  },
-  {
-    dateStart: 'JUN 2023',
-    dateEnd: 'SEP 2023',
-    last: true,
-    role: 'FRONTEND DEVELOPER · PERU · REMOTE',
-    company: 'Ludik',
-    description:
-      'Boutique web studio. WordPress, PHP, ACF. Production sites: Soho Inmobiliaria, Sayers Ophthalmology, No Hay Sin Suerte, Codekillers, Jorge Luna.',
-    bullets: [
-      ['Shipped ', { highlight: '4+ production WordPress sites' }, ' end-to-end.'],
-      [{ highlight: '+30–50% organic traffic' }, ' via technical SEO on 4+ clients.'],
-      [{ highlight: '+20% avg. retention' }, ' via 12+ interactive animations.'],
-      ["Custom subscription / raffle module on Jorge Luna's WP site."],
-    ],
-  },
-]
+import { getProfile, type Variant, type BulletNode } from '../lib/profile'
 
 function renderBullet(nodes: BulletNode) {
   return nodes.map((node, i) =>
@@ -80,7 +8,8 @@ function renderBullet(nodes: BulletNode) {
   )
 }
 
-const Experience = () => {
+const Experience = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  const experiences = getProfile(variant).experience
   return (
     <section id="experience" className="border-t border-white/8 bg-white/1">
       <div className="max-w-7xl mx-auto px-4 pt-14 pb-14 lg:px-8 lg:py-35">

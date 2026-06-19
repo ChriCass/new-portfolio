@@ -1,13 +1,5 @@
 import React from 'react'
-
-const stack = {
-  shopify:   ["Liquid", "OS 2.0", "Theme App Ext.", "Metafields", "Metaobjects", "CLI", "Polaris", "Admin API", "Storefront API", "Webhooks", "OAuth 2.0", "Shopify Plus", "Checkout Ext.", "Functions"],
-  languages: ["JavaScript", "TypeScript", "PHP", "HTML5", "CSS3", "SQL", "Liquid", "C#"],
-  frameworks:["Vue.js", "Laravel", "Inertia.js", "Livewire", "Wire UI", "Bootstrap", "Tailwind", "SCSS", "jQuery", "WordPress", "ACF"],
-  databases: ["MySQL", "PostgreSQL", "SQL Server"],
-  methods:   ["CRO", "A/B Testing", "Mobile-First", "Core Web Vitals", "Technical SEO", "Agile/Scrum", "Code Review"],
-  tools:     ["Git", "GitHub", "GH Actions", "Lighthouse", "DevTools", "Vite", "NPM"],
-}
+import { getProfile, type Variant } from '../lib/profile'
 
 const Row = ({ label, items }: { label: string; items: string[] }) => (
   <>
@@ -24,7 +16,9 @@ const Row = ({ label, items }: { label: string; items: string[] }) => (
   </>
 )
 
-const stackTerminal = () => {
+const stackTerminal = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  const profile = getProfile(variant)
+  const stack = profile.stack.data
   return (
     <section id="stack" className="max-w-7xl mx-auto px-4 lg:px-8 pt-14 pb-14 lg:pt-35 lg:pb-25">
       <div className="flex flex-col lg:grid lg:grid-cols-[1fr_1.4fr] gap-20 items-start">
@@ -34,7 +28,7 @@ const stackTerminal = () => {
             The daily<br/>toolkit.
           </h2>
           <p className="m-0 text-[#a3a3a3] leading-[1.6] max-w-[36ch]">
-            Pragmatic full-stack tooling oriented around Shopify and Laravel. Opinionated about Liquid hygiene, CWV and code reviews that read like writing.
+            {profile.stack.intro}
           </p>
         </div>
 

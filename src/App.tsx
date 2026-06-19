@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
+import Header from './components/header'
+import Hero from './components/hero'
 import SelectedWork from './components/selectedWork'
-import Metrics from './components/Metrics'
+import Metrics from './components/metrics'
 import StackTerminal from './components/stackTerminal'
 import Experience from './components/experience'
 import About from './components/about'
@@ -13,15 +13,15 @@ import Footer from './components/footer'
 function App() {
   return (
     <main className="bg-[#0a0a0a] text-[#ededed] min-h-screen text-sm leading-[1.55]">
-      <Header />
-      <Hero />
-      <Metrics />
-      <SelectedWork />
-      <StackTerminal />
-      <Experience />
-      <About />
+      <Header        variant="frontend" />
+      <Hero          variant="frontend" />
+      <Metrics       variant="frontend" />
+      <SelectedWork  variant="shopify" />
+      <StackTerminal variant="frontend" />
+      <Experience    variant="frontend" />
+      <About         variant="frontend" />
       <Contact />
-      <Footer />
+      <Footer        variant="frontend" />
     </main>
 
   )

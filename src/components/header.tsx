@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ThemeToggle from './ThemeToggle'
+import { getProfile, type Variant } from '../lib/profile'
 
 const links = [
   { href: '#work',       label: 'work'       },
@@ -9,7 +10,8 @@ const links = [
   { href: '#contact',    label: 'contact'    },
 ]
 
-const Header = () => {
+const Header = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  const profile = getProfile(variant)
   const [open, setOpen] = useState(false)
 
   // bloquea el scroll del body mientras el menu esta abierto
@@ -29,7 +31,7 @@ const Header = () => {
             cc
           </div>
           <span className="text-[#ededed] font-medium">christian.cassas</span>
-          <span className="text-[#525252]">/dev</span>
+          <span className="text-[#525252]">{profile.tag}</span>
         </div>
 
         {/* nav desktop */}

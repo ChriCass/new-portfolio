@@ -1,13 +1,8 @@
 import React from 'react'
+import { getProfile, type Variant } from '../lib/profile'
 
-const items = [
-  { label: 'REVENUE INFLUENCED',    value: '£35M', suffix: '+' },
-  { label: 'BRANDS SHIPPED',        value: '80',   suffix: '+' },
-  { label: 'GUARANTEED UPLIFT / 90D', value: '+30%', suffix: ''  },
-  { label: 'LIGHTHOUSE MOBILE GAIN', value: '+40%', suffix: ''  },
-]
-
-const metrics = () => {
+const metrics = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  const items = getProfile(variant).metrics
   return (
     <section className="border-t border-b border-white/8 bg-white/1">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 flex flex-col lg:grid lg:grid-cols-4 gap-8">

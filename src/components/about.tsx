@@ -1,28 +1,26 @@
 import React from 'react'
+import { getProfile, type Variant } from '../lib/profile'
 
 const stats = [
-  { label: 'BASED',     value: 'Peru',       sub: 'UTC−5' },
-  { label: 'LANGUAGES', value: 'ES / EN',         sub: 'C1 · EFSET 64' },
-  { label: 'STUDYING',  value: 'CS & Eng',        sub: 'U. Científica del Sur' },
-  { label: "FOCUS '26", value: 'Checkout Ext.',   sub: 'Functions · CRO' },
+  { label: 'BASED',     value: 'Peru',      sub: 'UTC−5'               },
+  { label: 'LANGUAGES', value: 'ES / EN',        sub: 'C1 · EFSET 64'      },
+  { label: 'STUDYING',  value: 'CS & Eng',       sub: 'U. Científica del Sur' },
+  { label: "FOCUS '26", value: 'Design Systems', sub: 'Motion · A11y'      },
 ]
 
-const about = () => {
+const about = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  const profile = getProfile(variant)
   return (
     <section id="about" className="max-w-7xl mx-auto px-4 lg:px-8  pt-14 pb-14 lg:py-35">
       <div className="flex flex-col lg:grid lg:grid-cols-[1fr_280px] gap-20 items-start">
         <div>
           <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/ABOUT</div>
           <h2 className="text-5xl lg:text-[56px] font-medium tracking-[-0.04em] leading-[1.02] m-0 mb-10 text-[#ededed]">
-            A developer who treats <span className="text-[#737373]">commerce as a craft.</span>
+            {profile.about.headlineA} <span className="text-[#737373]">{profile.about.headlineB}</span>
           </h2>
           <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-10 text-[#a3a3a3] leading-[1.7] text-[15px]">
-            <p className="m-0">
-              Started in 2023 building WordPress sites for Peruvian agencies — small clients, real deadlines, learning what does and doesn't survive contact with production. Two years later I was leading multi-tenant accounting platforms in Laravel; one more, shipping checkout extensions for British DTC founders at 3am London time.
-            </p>
-            <p className="m-0">
-              The throughline: systems that <span className="text-[#ededed]">actually move numbers</span>. Liquid that respects the merchant. A/B tests with clean instrumentation. Lighthouse scores that climb because the architecture got simpler, not because something got hidden. Code reviews that read like writing.
-            </p>
+            <p className="m-0">{profile.about.paragraphs[0]}</p>
+            <p className="m-0">{profile.about.paragraphs[1]}</p>
           </div>
 
           <div className="mt-5 flex text-center justify-center flex-wrap gap-3 lg:grid lg:grid-cols-4 lg:gap-6 lg:mt-16 pt-8 border-t border-white/8 lg:text-left">

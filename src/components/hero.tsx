@@ -1,11 +1,13 @@
 import React from "react";
+import { getProfile, type Variant } from "../lib/profile";
 
 const ctas = [
   { href: '#work',    label: 'See selected work', arrow: '→', primary: true  },
   { href: '#contact', label: 'Start a project',   arrow: '↗', primary: false },
 ]
 
-const hero = () => {
+const hero = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  const profile = getProfile(variant)
   return (
     <section className="relative max-w-[1280px] mx-auto overflow-hidden px-4 lg:px-8 pt-14 lg:pt-30 pb-14 lg:pb-25">
       {/* subtle grid bg */}
@@ -27,11 +29,11 @@ const hero = () => {
         </div>
 
         <h1 className="font-['Geist',system-ui,sans-serif] font-medium text-[clamp(56px,9vw,140px)] leading-[.95] tracking-[-.045em] m-0 text-[#ededed]">
-          Frontend Developer
+          {profile.hero.headlineA}
           <br />
           building{" "}
           <span className="bg-linear-to-br from-[#fafafa] to-[#737373] bg-clip-text text-transparent">
-            storefronts
+            {profile.hero.headlineHighlight}
           </span>
           <br />
           that ship revenue.
@@ -40,13 +42,7 @@ const hero = () => {
 
         <div className="flex flex-col lg:grid lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-20 pt-12 border-t border-white/8">
           <p className="m-0 text-[#a3a3a3] text-lg leading-[1.6] max-w-[62ch]">
-            Software engineer with 3 years across Liquid, Laravel and Vue.
-            Currently at <span className="text-[#ededed]">Step Labs</span> in
-            London — Shopify Plus, OS 2.0, Theme App Extensions, Checkout
-            Extensibility. Influenced{" "}
-            <span className="text-[#ededed]">£35M+ revenue</span> across{" "}
-            <span className="text-[#ededed]">80+ DTC brands</span> through CRO,
-            A/B testing and Core Web Vitals work.
+            {profile.hero.paragraph}
           </p>
 
           <div className="flex flex-col gap-3.5">
