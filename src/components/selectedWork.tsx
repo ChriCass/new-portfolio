@@ -76,7 +76,7 @@ const Thumb = ({ card }: { card: BaseCard }) => (
     {card.image && (
       <div className="absolute inset-0 transition-opacity duration-500 group-hover:opacity-60" style={{ background: `linear-gradient(to top, ${card.overlay}cc 0%, ${card.overlay}55 50%, transparent 100%)` }} />
     )}
-    <div className="absolute top-4 left-4 right-4 flex justify-between font-mono text-[10px] tracking-[0.14em] text-white/70 drop-shadow">
+    <div className="absolute bottom-4 left-4 right-4 flex justify-between font-mono text-[10px] tracking-[0.14em] text-white/70 drop-shadow">
       <span>● {card.title.toUpperCase()}</span><span>{card.tag}</span>
     </div>
     {!card.image && (

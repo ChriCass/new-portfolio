@@ -55,7 +55,7 @@ const stackTerminal = ({ variant = 'frontend' }: { variant?: Variant }) => {
         </div>
 
         {/* terminal card */}
-        <div className="border border-white/10 rounded-[14px] bg-[#080808] overflow-hidden">
+        <div className="terminal-card border border-white/10 rounded-[14px] bg-[#080808] overflow-hidden">
           <div className="flex items-center gap-2 px-4 py-3 border-b border-white/6 bg-white/2">
             <span className="w-2.75 h-2.75 rounded-full bg-[#ff5f57]"></span>
             <span className="w-2.75 h-2.75 rounded-full bg-[#febc2e]"></span>

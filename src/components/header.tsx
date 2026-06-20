@@ -50,16 +50,19 @@ const Header = ({ variant = 'frontend' }: { variant?: Variant }) => {
           available
         </div>
 
-        {/* hamburger — solo mobile */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden flex flex-col gap-1.5 p-1 text-[#a3a3a3]"
-          aria-label="toggle menu"
-        >
-          <span className={`block w-5 h-px bg-current transition-all ${open ? 'rotate-45 translate-y-2' : ''}`}></span>
-          <span className={`block w-5 h-px bg-current transition-all ${open ? 'opacity-0' : ''}`}></span>
-          <span className={`block w-5 h-px bg-current transition-all ${open ? '-rotate-45 -translate-y-2' : ''}`}></span>
-        </button>
+        {/* toggle + hamburger — solo mobile */}
+        <div className="md:hidden flex items-center gap-3 text-[#a3a3a3]">
+          <ThemeToggle />
+          <button
+            onClick={() => setOpen(!open)}
+            className="flex flex-col gap-1.5 p-1"
+            aria-label="toggle menu"
+          >
+            <span className={`block w-5 h-px bg-current transition-all ${open ? 'rotate-45 translate-y-2' : ''}`}></span>
+            <span className={`block w-5 h-px bg-current transition-all ${open ? 'opacity-0' : ''}`}></span>
+            <span className={`block w-5 h-px bg-current transition-all ${open ? '-rotate-45 -translate-y-2' : ''}`}></span>
+          </button>
+        </div>
 
       </div>
 
