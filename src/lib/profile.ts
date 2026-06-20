@@ -44,11 +44,12 @@ interface Profile {
     headlineA: string
     headlineB: string               // gris
     paragraphs: [string, React.ReactNode]
+    portrait: { name: string; location: string }
   }
   selectedWork: {
     subtitle: React.ReactNode
     projects: {
-      invigorated: ProjectCopy
+      kayelarcky: ProjectCopy
       suji:        ProjectCopy
       sowell:      ProjectCopy
       berkeley:    ProjectCopy
@@ -93,11 +94,10 @@ const frontend: Profile = {
     data: {
       frameworks: ['React', 'Next.js', 'Vue.js', 'Nuxt', 'Inertia.js', 'Astro'],
       languages:  ['TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Liquid'],
-      styling:    ['Tailwind', 'SCSS', 'CSS Modules', 'CSS Variables', 'Container Queries', 'PostCSS'],
-      ui:         ['Design Systems', 'Radix', 'Polaris', 'Framer Motion', 'GSAP', 'Lottie'],
-      quality:    ['Core Web Vitals', 'LCP / CLS / INP', 'WCAG 2.1 AA', 'Lighthouse', 'Axe'],
-      data:       ['GraphQL', 'REST', 'React Query', 'SWR', 'Zod'],
-      tools:      ['Vite', 'Storybook', 'Figma', 'Git', 'GitHub Actions', 'DevTools'],
+      styling:    ['Tailwind', 'SCSS', 'CSS Modules', 'CSS Variables', 'Container Queries'],
+      quality:    ['Core Web Vitals', 'LCP / CLS / INP', 'WCAG 2.1 AA', 'Lighthouse', 'PageSpeed Insights'],
+      data:       ['GraphQL', 'REST', 'relational databases', 'SQL'],
+      tools:      ['Vite', 'Storybook','Git', 'GitHub Actions', 'DevTools'],
     },
   },
   about: {
@@ -111,6 +111,7 @@ const frontend: Profile = {
         '. Component APIs the next dev enjoys using. Accessible by default. Lighthouse scores that climb because the architecture got simpler, not because something got hidden. PRs that read like writing.',
       ),
     ],
+    portrait: { name: 'Christian Cassas', location: 'Based in Peru, working remotely' },
   },
   selectedWork: {
     subtitle: t(
@@ -119,7 +120,7 @@ const frontend: Profile = {
       createElement('span', { className: 'text-[#525252]' }, '2024 — 2026'),
     ),
     projects: {
-      invigorated: {
+      kayelarcky: {
         badge: 'UI · PERF',
         description: 'Premium water filtration brand. Rebuilt the PDP and cart UI against Core Web Vitals — image strategy, font subsetting, hydration cleanup. Componentized the bundling flow for reuse across the catalog.',
         tags: ['TypeScript', 'CSS Architecture'],
@@ -233,11 +234,11 @@ const shopify: Profile = {
   ],
   stack: {
     intro:
-      'Pragmatic full-stack tooling oriented around Shopify and Laravel. Opinionated about Liquid hygiene, CWV and code reviews that read like writing.',
+      'Pragmatic full-stack tooling oriented around Shopify and Next.js. Opinionated about Liquid hygiene, CWV and code reviews that read like writing.',
     data: {
-      shopify:    ['Liquid', 'OS 2.0', 'Theme App Ext.', 'Metafields', 'Metaobjects', 'CLI', 'Polaris', 'Admin API', 'Storefront API', 'Webhooks', 'Shopify Plus', 'Checkout Ext.', 'Functions'],
+      shopify:    ['Liquid','Hydrogen' ,'OS 2.0', 'Theme App Ext.', 'Metafields', 'Metaobjects', 'CLI', 'Polaris', 'Admin API', 'Storefront API', 'Webhooks', 'Shopify Plus', 'Checkout Ext.', 'Functions'],
       languages:  ['JavaScript', 'TypeScript', 'PHP', 'HTML5', 'CSS3', 'SQL', 'Liquid'],
-      frameworks: ['Vue.js', 'Laravel', 'Inertia.js', 'Livewire', 'Wire UI', 'Bootstrap', 'Tailwind', 'SCSS', 'WordPress', 'ACF'],
+      frameworks: ['Vue.js', 'Next.js', 'Laravel', 'Livewire', 'Wire UI', 'Bootstrap', 'Tailwind', 'SCSS'],
       databases:  ['MySQL', 'PostgreSQL', 'SQL Server'],
       methods:    ['CRO', 'A/B Testing', 'Mobile-First', 'Core Web Vitals', 'Technical SEO', 'Agile/Scrum', 'Code Review'],
       tools:      ['Git', 'GitHub', 'GH Actions', 'Lighthouse', 'DevTools', 'Vite', 'NPM'],
@@ -254,6 +255,7 @@ const shopify: Profile = {
         '. A/B tests that lock in conversion. Liquid that the next dev can read. PRs reviewed line by line. The boring stuff that compounds.',
       ),
     ],
+    portrait: { name: 'Christian Cassas', location: 'Based in Peru, working remotely' },
   },
   selectedWork: {
     subtitle: t(
@@ -262,7 +264,7 @@ const shopify: Profile = {
       createElement('span', { className: 'text-[#525252]' }, '2024 — 2026'),
     ),
     projects: {
-      invigorated: {
+      kayelarcky: {
         badge: 'PDP · CART',
         description: 'Premium water filtration storefront. Rebuilt PDP + cart against CWV; Theme App Extensions for subscription billing without theme bloat.',
         tags: ['Liquid', 'OS 2.0'],

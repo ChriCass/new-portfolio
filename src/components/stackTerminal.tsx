@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { getProfile, type Variant } from '../lib/profile'
 
 const Row = ({ label, items }: { label: string; items: string[] }) => (
@@ -19,6 +19,28 @@ const Row = ({ label, items }: { label: string; items: string[] }) => (
 const stackTerminal = ({ variant = 'frontend' }: { variant?: Variant }) => {
   const profile = getProfile(variant)
   const stack = profile.stack.data
+
+    useEffect(() => {
+      const dot = document.getElementById('dotPanel');
+      if (!dot) return;
+  
+      let counter = 0;
+      const dotAnimation = setInterval(() => {
+        counter++;
+        if (counter % 2 === 0) {
+          dot.classList.add('inline-block');
+          dot.classList.remove('hidden');
+        } else {
+          dot.classList.add('hidden');
+          dot.classList.remove('inline-block');
+        }
+      }, 500);
+  
+      return () => clearInterval(dotAnimation);
+    }, []);
+    
+
+
   return (
     <section id="stack" className="max-w-7xl mx-auto px-4 lg:px-8 pt-14 pb-14 lg:pt-35 lg:pb-25">
       <div className="flex flex-col lg:grid lg:grid-cols-[1fr_1.4fr] gap-20 items-start">
@@ -45,7 +67,7 @@ const stackTerminal = ({ variant = 'frontend' }: { variant?: Variant }) => {
               <Row key={label} label={label} items={items} />
             ))}
             <div className="mt-4.5 text-[#737373]">
-              <span className="text-green-500">$</span> _<span className="inline-block w-[0.5em] h-[1em] bg-[#d4d4d4] align-[-0.1em] ml-[0.05em]"></span>
+              <span className="text-green-500">$</span> _<span id="dotPanel" className="inline-block w-[0.5em] h-[1em] bg-[#d4d4d4] align-[-0.1em] ml-[0.05em]"></span>
             </div>
           </div>
         </div>

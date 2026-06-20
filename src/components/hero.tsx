@@ -1,5 +1,5 @@
-import React from "react";
-import { getProfile, type Variant } from "../lib/profile";
+import React, { useEffect } from "react";
+import { getProfile,  type Variant } from "../lib/profile";
 
 const ctas = [
   { href: '#work',    label: 'See selected work', arrow: '→', primary: true  },
@@ -7,6 +7,26 @@ const ctas = [
 ]
 
 const hero = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  useEffect(() => {
+    const dot = document.getElementById('dot');
+    if (!dot) return;
+
+    let counter = 0;
+    const dotAnimation = setInterval(() => {
+      counter++;
+      if (counter % 2 === 0) {
+        dot.classList.add('inline-block');
+        dot.classList.remove('hidden');
+      } else {
+        dot.classList.add('hidden');
+        dot.classList.remove('inline-block');
+      }
+    }, 500);
+
+    return () => clearInterval(dotAnimation);
+  }, []);
+  
+
   const profile = getProfile(variant)
   return (
     <section className="relative max-w-[1280px] mx-auto overflow-hidden px-4 lg:px-8 pt-14 lg:pt-30 pb-14 lg:pb-25">
@@ -25,7 +45,7 @@ const hero = ({ variant = 'frontend' }: { variant?: Variant }) => {
             <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] shadow-[0_0_12px_#22c55e]" />
             Ready for new opportunities
           </span>
-          <span className="text-[#525252]">v2.6 · last deploy 12h ago</span>
+        
         </div>
 
         <h1 className="font-['Geist',system-ui,sans-serif] font-medium text-[clamp(56px,9vw,140px)] leading-[.95] tracking-[-.045em] m-0 text-[#ededed]">
@@ -37,7 +57,7 @@ const hero = ({ variant = 'frontend' }: { variant?: Variant }) => {
           </span>
           <br />
           that ship revenue.
-          <span className="cursor inline-block w-[.5em] h-[.9em] bg-[#ededed] align-[-.05em] ml-[.1em]" />
+          <span id="dot" className="cursor hidden w-[.5em] h-[.6em] bg-[#ededed] align-[-.05em] ml-[.1em]" />
         </h1>
 
         <div className="flex flex-col lg:grid lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-20 pt-12 border-t border-white/8">

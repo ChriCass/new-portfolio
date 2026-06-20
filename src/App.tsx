@@ -17,9 +17,9 @@ function App() {
       <Hero          variant="frontend" />
       <Metrics       variant="frontend" />
       <SelectedWork  variant="shopify" />
-      <StackTerminal variant="frontend" />
+      <StackTerminal variant="shopify" />
       <Experience    variant="frontend" />
-      <About         variant="frontend" />
+      <About         variant="shopify" />
       <Contact />
       <Footer        variant="frontend" />
     </main>
