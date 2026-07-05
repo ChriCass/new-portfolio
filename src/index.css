@@ -1,20 +1,15 @@
 @import "tailwindcss";
 
-* {
-  font-family:'Geist', sans-serif !important;
-}
-
 html {
+  font-family: 'Geist', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 53px;
-  transition: filter 0.35s cubic-bezier(0.9, 0, 0.1, 1);
 }
 
 html.light {
   filter: invert(1) hue-rotate(180deg);
 }
 
-/* re-invert elements que no deben invertirse */
 html.light img,
 html.light video,
 html.light iframe,
@@ -30,6 +25,23 @@ html.light .terminal-card {
     height: auto !important;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: #fafafa;
+  color: #0a0a0a;
+  font-family: monospace;
+  font-size: 13px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 8px;
+}
+
 @keyframes textReveal {
   from {
     opacity: 0;
@@ -43,4 +55,25 @@ html.light .terminal-card {
 
 .text-enter {
   animation: textReveal 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:focus-visible {
+  outline: 2px solid #fafafa;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .text-enter {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

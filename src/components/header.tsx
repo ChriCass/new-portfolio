@@ -59,10 +59,10 @@ const Header = ({ variant = 'frontend' }: { variant?: Variant }) => {
             cc
           </div>
           <span className="text-[#ededed] font-medium truncate">christian.cassas</span>
-          <span className="text-[#525252] hidden sm:inline">{profile.tag}</span>
+          <span className="text-[#949494] hidden sm:inline">{profile.tag}</span>
         </div>
 
-        <nav className="hidden md:flex gap-7 text-[#a3a3a3]">
+        <nav className="hidden md:flex gap-7 text-[#a3a3a3]" aria-label={t('nav.main')}>
           {sectionKeys.map((key, i) => (
             <a key={sectionHrefs[i]} href={sectionHrefs[i]} onClick={(e) => handleNav(e, sectionHrefs[i])} className="hover:text-[#ededed] transition-colors">{t(key)}</a>
           ))}
@@ -80,6 +80,8 @@ const Header = ({ variant = 'frontend' }: { variant?: Variant }) => {
             onClick={() => setOpen(!open)}
             className="flex flex-col gap-1.5 p-1"
             aria-label={t('header.toggleMenu')}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
           >
             <span className={`block w-5 h-px bg-current transition-all ${open ? 'rotate-45 translate-y-2' : ''}`}></span>
             <span className={`block w-5 h-px bg-current transition-all ${open ? 'opacity-0' : ''}`}></span>
@@ -90,9 +92,11 @@ const Header = ({ variant = 'frontend' }: { variant?: Variant }) => {
       </div>
 
       <nav
+        id="mobile-nav"
         className={`md:hidden fixed inset-x-0 top-13.25 h-[calc(100dvh-3.3125rem)] bg-[#0a0a0a] px-8 flex flex-col justify-center gap-8 font-mono text-[#a3a3a3] transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
           open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'
         }`}
+        aria-label={t('nav.mobile')}
         aria-hidden={!open}
       >
         {sectionKeys.map((key, i) => (
@@ -100,6 +104,7 @@ const Header = ({ variant = 'frontend' }: { variant?: Variant }) => {
             key={sectionHrefs[i]}
             href={sectionHrefs[i]}
             onClick={(e) => handleNav(e, sectionHrefs[i])}
+            tabIndex={open ? 0 : -1}
             style={{
               transitionDelay: open ? `${120 + i * 70}ms` : '0ms',
             }}

@@ -45,7 +45,7 @@ const hero = ({ variant = 'frontend' }: { variant?: Variant }) => {
           {t(`hero.headlineA.${variant}`)}
           <br />
           {t('hero.building')}{" "}
-          <span className="bg-linear-to-br from-[#fafafa] to-[#737373] bg-clip-text text-transparent">
+          <span className="bg-linear-to-br from-[#fafafa] to-[#a3a3a3] bg-clip-text text-transparent">
             {t(`hero.headlineHighlight.${variant}`)}
           </span>
           <br />
@@ -68,11 +68,11 @@ const hero = ({ variant = 'frontend' }: { variant?: Variant }) => {
                 }`}
               >
                 <span>{t(key)}</span>
-                <span className={primary ? '' : 'text-[#a3a3a3]'}>{arrow}</span>
+                <span className={primary ? '' : 'text-[#a3a3a3]'} aria-hidden="true">{arrow}</span>
               </a>
             ))}
-            <div className="font-mono text-[11px] text-[#525252] py-1 px-0.5 flex justify-between">
-              <a href="mailto:chris_ccc68@outlook.com" className="text-[#525252] no-underline hover:text-[#a3a3a3] transition-colors">
+            <div className="font-mono text-[11px] text-[#949494] py-1 px-0.5 flex justify-between">
+              <a href="mailto:chris_ccc68@outlook.com" className="text-[#949494] no-underline hover:text-[#a3a3a3] transition-colors" aria-label="Send email to chris_ccc68@outlook.com">
                 chris_ccc68@outlook.com
               </a>
               <span>Peru · UTC−5</span>

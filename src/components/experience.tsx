@@ -11,7 +11,7 @@ const Experience = ({ variant = 'frontend' }: { variant?: Variant }) => {
       <div className="max-w-7xl mx-auto px-4 pt-14 pb-14 lg:px-8 lg:py-35">
         <div className="flex items-end justify-between mb-18">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/EXPERIENCE</div>
+            <div className="font-mono text-[11px] tracking-[0.16em] text-[#949494] mb-4.5">/EXPERIENCE</div>
             <h2 key={langKey} className="text-5xl lg:text-[56px] font-medium tracking-[-0.04em] leading-none m-0 text-[#ededed] text-enter">{t('experience.heading')}</h2>
           </div>
         </div>
@@ -24,13 +24,13 @@ const Experience = ({ variant = 'frontend' }: { variant?: Variant }) => {
             >
               <div className="font-mono text-xs text-[#a3a3a3] leading-[1.7]">
                 {exp.dateStart}<br/>
-                <span className="text-[#525252]">— {exp.dateEnd}</span>
+                <span className="text-[#949494]">— {exp.dateEnd}</span>
                 {exp.active && (
                   <><br/><span className="text-[#22c55e] inline-flex items-center gap-1.5 mt-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#22c55e]"></span>{t('experience.active')}</span></>
                 )}
               </div>
               <div key={`${langKey}-${i}`} className="text-enter">
-                <div className="font-mono text-[11px] text-[#525252] mb-2">{t(`exp.role.${variant}.${i}`)}</div>
+                <div className="font-mono text-[11px] text-[#949494] mb-2">{t(`exp.role.${variant}.${i}`)}</div>
                 <h3 className="text-[28px] font-medium tracking-tight m-0 mb-3.5 text-[#ededed]">{t(`exp.company.${variant}.${i}`)}</h3>
                 <p className="m-0 text-[#a3a3a3] leading-[1.6]">{t(`exp.desc.${variant}.${i}`)}</p>
               </div>
@@ -40,7 +40,7 @@ const Experience = ({ variant = 'frontend' }: { variant?: Variant }) => {
                     key={j}
                     className={`py-1.5   ${j < exp.bullets.length - 1 ? 'border-b border-white/5' : ''}`}
                   >
-                    <span className="text-[#525252] mr-2">{String(j + 1).padStart(2, '0')}</span>
+                    <span className="text-[#949494] mr-2">{String(j + 1).padStart(2, '0')}</span>
                     {t(`exp.bullet.${variant}.${i}.${j}`)}
                   </li>
                 ))}

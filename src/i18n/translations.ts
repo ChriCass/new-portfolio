@@ -8,6 +8,8 @@ const en: TranslationDict = {
   'nav.experience': 'experience',
   'nav.about': 'about',
   'nav.contact': 'contact',
+  'nav.main': 'Main navigation',
+  'nav.mobile': 'Mobile navigation',
 
   'hero.cta.work': 'See selected work',
   'hero.cta.contact': 'Start a project',
@@ -198,6 +200,8 @@ const es: TranslationDict = {
   'nav.experience': 'experiencia',
   'nav.about': 'sobre mí',
   'nav.contact': 'contacto',
+  'nav.main': 'Navegación principal',
+  'nav.mobile': 'Navegación móvil',
 
   'hero.cta.work': 'Ver trabajo seleccionado',
   'hero.cta.contact': 'Iniciar un proyecto',

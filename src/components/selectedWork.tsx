@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { A11y } from 'swiper/modules'
 import 'swiper/css'
 import { useT, useLanguage } from '../i18n'
 import { getProfile, type Variant } from '../lib/profile'
@@ -92,7 +93,7 @@ const Thumb = ({ card }: { card: BaseCard }) => (
 type Card = BaseCard & { badge: string; desc: string; tags: string[]; metric: string }
 
 const Tags = ({ card }: { card: Card }) => (
-  <div className="flex gap-2 flex-wrap font-mono text-[11px] text-[#525252]">
+  <div className="flex gap-2 flex-wrap font-mono text-[11px] text-[#949494]">
     {card.tags.map(t => <span key={t} className="px-2.25 py-1 bg-white/4 rounded-[5px]">{t}</span>)}
     <span className="px-2.25 py-1 bg-green-500/8 text-[#86efac] rounded-[5px]">{card.metric}</span>
   </div>
@@ -104,7 +105,7 @@ const CardInner = ({ card }: { card: Card }) => (
     <div className="mb-6"><Thumb card={card} /></div>
     <div className="flex flex-col gap-4 lg:justify-between items-start mb-3.5">
       <div>
-        <div className="font-mono text-[11px] text-[#525252] mb-1.5">
+        <div className="font-mono text-[11px] text-[#949494] mb-1.5">
           {card.id} — {card.year}{card.featured ? ' · FEATURED' : ''}
         </div>
         <h3 className="text-2xl font-medium tracking-[-0.02em] m-0 text-[#ededed]">{card.title}</h3>
@@ -124,7 +125,7 @@ const FeaturedCard = ({ card }: { card: Card }) => (
       <div>
         <div className="flex justify-between items-start mb-4.5">
           <div>
-            <div className="font-mono text-[11px] text-[#525252] mb-1.5">{card.id} — {card.year} · FEATURED</div>
+            <div className="font-mono text-[11px] text-[#949494] mb-1.5">{card.id} — {card.year} · FEATURED</div>
             <h3 className="text-[36px] font-medium tracking-tight m-0 text-[#ededed]">{card.title}</h3>
           </div>
         </div>
@@ -149,7 +150,7 @@ const selectedWork = ({ variant = 'frontend' }: { variant?: Variant }) => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="flex flex-col gap-5 lg:items-end lg:justify-between mb-16">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/SELECTED_WORK</div>
+            <div className="font-mono text-[11px] tracking-[0.16em] text-[#949494] mb-4.5">/SELECTED_WORK</div>
             <h2 key={langKey} className="text-5xl lg:text-[64px] font-medium tracking-[-0.04em] leading-none m-0 text-[#ededed] text-enter">{t('selectedWork.heading')}</h2>
           </div>
           <div key={langKey + 1} className="font-mono text-xs text-[#a3a3a3] lg:text-right max-w-60 text-enter">
@@ -159,7 +160,18 @@ const selectedWork = ({ variant = 'frontend' }: { variant?: Variant }) => {
       </div>
 
       <div className="lg:hidden px-4">
-        <Swiper slidesPerView={1.1} spaceBetween={16} grabCursor>
+        <Swiper
+          modules={[A11y]}
+          slidesPerView={1.1}
+          spaceBetween={16}
+          grabCursor
+          a11y={{
+            prevSlideMessage: 'Previous project',
+            nextSlideMessage: 'Next project',
+            firstSlideMessage: 'This is the first project',
+            lastSlideMessage: 'This is the last project',
+          }}
+        >
           {cards.map(card => (
             <SwiperSlide key={card.id}>
               <CardInner card={card} />

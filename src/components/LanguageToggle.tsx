@@ -16,6 +16,7 @@ const LanguageToggle = () => {
         onClick={toggleLang}
         className="relative flex items-center w-[40px] h-6 rounded-full border border-white/10 bg-white/3 hover:border-white/20 transition-colors cursor-pointer"
         aria-label={isEs ? 'Switch to English' : 'Cambiar a español'}
+        aria-pressed={isEs}
         title={isEs ? 'Switch to English' : 'Cambiar a español'}
       >
         <span

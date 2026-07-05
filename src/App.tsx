@@ -12,7 +12,7 @@ import Footer from './components/footer'
 function App() {
   return (
     <LanguageProvider>
-      <main key="app-root" className="bg-[#0a0a0a] text-[#ededed] min-h-screen text-sm leading-[1.55]">
+      <main id="main-content" className="bg-[#0a0a0a] text-[#ededed] min-h-screen text-sm leading-[1.55]">
         <Header        variant="frontend" />
         <Hero          variant="frontend" />
         <Metrics       variant="frontend" />
