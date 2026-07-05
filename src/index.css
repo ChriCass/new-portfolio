@@ -5,6 +5,8 @@
 }
 
 html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 53px;
   transition: filter 0.35s cubic-bezier(0.9, 0, 0.1, 1);
 }
 
@@ -26,4 +28,19 @@ html.light .terminal-card {
 
 .swiper-slide {
     height: auto !important;
+}
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-enter {
+  animation: textReveal 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }

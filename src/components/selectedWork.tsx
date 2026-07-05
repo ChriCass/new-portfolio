@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
+import { useT, useLanguage } from '../i18n'
 import { getProfile, type Variant } from '../lib/profile'
 import getSoWellImage from '../assets/img/portfolio-projects-1.webp'
 import img2 from '../assets/img/portfolio-projects-2.webp'
@@ -135,10 +136,12 @@ const FeaturedCard = ({ card }: { card: Card }) => (
 )
 
 const selectedWork = ({ variant = 'frontend' }: { variant?: Variant }) => {
+  const t = useT()
+  const { langKey } = useLanguage()
   const profile = getProfile(variant)
   const cards: Card[] = baseCards.map(b => {
     const copy = profile.selectedWork.projects[b.key]
-    return { ...b, badge: copy.badge, desc: copy.description, tags: copy.tags, metric: copy.metric }
+    return { ...b, badge: t(`project.${b.key}.badge.${variant}`), desc: t(`project.${b.key}.desc.${variant}`), tags: copy.tags, metric: copy.metric }
   })
 
   return (
@@ -147,15 +150,14 @@ const selectedWork = ({ variant = 'frontend' }: { variant?: Variant }) => {
         <div className="flex flex-col gap-5 lg:items-end lg:justify-between mb-16">
           <div>
             <div className="font-mono text-[11px] tracking-[0.16em] text-[#525252] mb-4.5">/SELECTED_WORK</div>
-            <h2 className="text-5xl lg:text-[64px] font-medium tracking-[-0.04em] leading-none m-0 text-[#ededed]">Storefronts in production.</h2>
+            <h2 key={langKey} className="text-5xl lg:text-[64px] font-medium tracking-[-0.04em] leading-none m-0 text-[#ededed] text-enter">{t('selectedWork.heading')}</h2>
           </div>
-          <div className="font-mono text-xs text-[#a3a3a3] lg:text-right max-w-60">
-            {profile.selectedWork.subtitle}
+          <div key={langKey + 1} className="font-mono text-xs text-[#a3a3a3] lg:text-right max-w-60 text-enter">
+            {t(`selectedWork.subtitle.${variant}`)}
           </div>
         </div>
       </div>
 
-      {/* Mobile: Swiper */}
       <div className="lg:hidden px-4">
         <Swiper slidesPerView={1.1} spaceBetween={16} grabCursor>
           {cards.map(card => (
@@ -166,7 +168,6 @@ const selectedWork = ({ variant = 'frontend' }: { variant?: Variant }) => {
         </Swiper>
       </div>
 
-      {/* Desktop: grid */}
       <div className="hidden lg:grid grid-cols-2 gap-6 max-w-7xl mx-auto px-8">
         {cards.map(card =>
           card.featured

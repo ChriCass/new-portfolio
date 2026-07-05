@@ -1,4 +1,4 @@
-import React from 'react'
+import { LanguageProvider } from './i18n'
 import Header from './components/header'
 import Hero from './components/hero'
 import SelectedWork from './components/selectedWork'
@@ -9,21 +9,21 @@ import About from './components/about'
 import Contact from './components/contact'
 import Footer from './components/footer'
 
-
 function App() {
   return (
-    <main className="bg-[#0a0a0a] text-[#ededed] min-h-screen text-sm leading-[1.55]">
-      <Header        variant="frontend" />
-      <Hero          variant="frontend" />
-      <Metrics       variant="frontend" />
-      <SelectedWork  variant="shopify" />
-      <StackTerminal variant="shopify" />
-      <Experience    variant="frontend" />
-      <About         variant="shopify" />
-      <Contact />
-      <Footer        variant="frontend" />
-    </main>
-
+    <LanguageProvider>
+      <main key="app-root" className="bg-[#0a0a0a] text-[#ededed] min-h-screen text-sm leading-[1.55]">
+        <Header        variant="frontend" />
+        <Hero          variant="frontend" />
+        <Metrics       variant="frontend" />
+        <SelectedWork  variant="shopify" />
+        <StackTerminal variant="shopify" />
+        <Experience    variant="frontend" />
+        <About         variant="shopify" />
+        <Contact />
+        <Footer />
+      </main>
+    </LanguageProvider>
   )
 }
 
