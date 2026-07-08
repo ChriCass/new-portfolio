@@ -73,9 +73,9 @@ const frontend: Profile = {
     headlineA: 'Frontend engineer',
     headlineHighlight: 'interfaces',
     paragraph: t(
-      'Frontend engineer with 3 years across React, Vue, TypeScript and modern CSS. Currently at ',
+      'Frontend engineer working across React, Vue, TypeScript and modern CSS. Currently at ',
       w('Step Labs'),
-      ' in London — design-system-driven UI, accessible components, motion, and Core Web Vitals work. Shipped UI across ',
+      ' in London, focused on design-system-driven UI, accessible components, motion, and Core Web Vitals work. Shipped UI across ',
       w('80+ brands'),
       ' influencing ',
       w('£35M+ revenue'),
@@ -104,7 +104,7 @@ const frontend: Profile = {
     headlineA: 'A frontend engineer who treats',
     headlineB: 'the UI as a product.',
     paragraphs: [
-      'Started in 2023 building custom themes for Peruvian agencies — small clients, real deadlines, learning what survives contact with production. Two years later I was leading the UI of a multi-tenant accounting platform; one more, shipping typed React components for British DTC founders at 3am London time.',
+      'Started in 2023 building custom themes for Peruvian agencies: small clients, real deadlines, learning what survives contact with production. Two years later I was leading the UI of a multi-tenant accounting platform; one more, shipping typed React components for British DTC founders at 3am London time.',
       t(
         'The throughline: interfaces that ',
         w('actually move numbers'),
@@ -117,12 +117,12 @@ const frontend: Profile = {
     subtitle: t(
       '5 frontends shipped to', createElement('br'),
       'production at ', w('Step Labs'), ' London', createElement('br'),
-      createElement('span', { className: 'text-[#525252]' }, '2024 — 2026'),
+      createElement('span', { className: 'text-[#525252]' }, '2024-2026'),
     ),
     projects: {
       kayelarcky: {
         badge: 'UI · PERF',
-        description: 'Premium water filtration brand. Rebuilt the PDP and cart UI against Core Web Vitals — image strategy, font subsetting, hydration cleanup. Componentized the bundling flow for reuse across the catalog.',
+        description: 'Premium water filtration brand. Rebuilt the PDP and cart UI against Core Web Vitals: image strategy, font subsetting, hydration cleanup. Componentized the bundling flow for reuse across the catalog.',
         tags: ['TypeScript', 'CSS Architecture'],
         metric: '+32% LCP',
       },
@@ -134,7 +134,7 @@ const frontend: Profile = {
       },
       sowell: {
         badge: 'PERSONALIZATION',
-        description: 'Sleep & wellness brand. Built a personalized PDP that renders dynamic copy and product modules from quiz state — all on a typed component layer with persisted client state.',
+        description: 'Sleep & wellness brand. Built a personalized PDP that renders dynamic copy and product modules from quiz state, all on a typed component layer with persisted client state.',
         tags: ['GraphQL', 'TypeScript'],
         metric: '+24% sub attach',
       },
@@ -146,7 +146,7 @@ const frontend: Profile = {
       },
       tano: {
         badge: 'FEATURED',
-        description: 'Clean skincare line. Designed a routine builder UI with progressive disclosure and a custom shade-by-tone component — typed, accessible, and instrumented end-to-end. Locked +27% CVR on mobile via 6-week split test.',
+        description: 'Clean skincare line. Designed a routine builder UI with progressive disclosure and a custom shade-by-tone component: typed, accessible, and instrumented end-to-end. Locked +27% CVR on mobile via 6-week split test.',
         tags: ['React', 'Design System', 'A11y'],
         metric: '+27% CVR',
       },
@@ -172,7 +172,7 @@ const frontend: Profile = {
       dateEnd: 'MAR 2025',
       role: 'UI ENGINEER · AREQUIPA, PE · HYBRID',
       company: 'RPU & Asociados',
-      description: 'Accounting firm. Led the frontend of a multi-tenant accounting platform serving 5+ companies — reactive UI with Livewire + Wire UI, Bootstrap / SCSS design system.',
+      description: 'Accounting firm. Led the frontend of a multi-tenant accounting platform serving 5+ companies with reactive UI built on Livewire + Wire UI, Bootstrap / SCSS design system.',
       bullets: [
         ['Built real-time cash mgmt UI; cut ', { highlight: '−70% manual reconciliation' }, '.'],
         ['Stood up a shared ', { highlight: 'SCSS component library' }, ' across 8 financial modules.'],
@@ -185,7 +185,7 @@ const frontend: Profile = {
       dateEnd: 'FEB 2024',
       role: 'FRONTEND DEVELOPER · LAMBAYEQUE, PE · REMOTE',
       company: 'F5 Solutions',
-      description: 'Edtech. Built the Vue / Inertia UI of an online learning platform powering 50+ courses — course player, dashboard, and content authoring screens.',
+      description: 'Edtech. Built the Vue / Inertia UI of an online learning platform powering 50+ courses: course player, dashboard, and content authoring screens.',
       bullets: [
         ['Shipped Vue 3 + Inertia UI across ', { highlight: '50+ courses' }, '.'],
         [{ highlight: '−35% content load time' }, ' via lazy routes & image strategy.'],
@@ -217,9 +217,9 @@ const shopify: Profile = {
     headlineA: 'Shopify developer',
     headlineHighlight: 'storefronts',
     paragraph: t(
-      'Full-stack engineer with 3 years across Liquid, Laravel and Vue. Currently at ',
+      'Full-stack engineer working across Liquid, Laravel and Vue. Currently at ',
       w('Step Labs'),
-      ' in London — Shopify Plus, OS 2.0, Theme App Extensions, Checkout Extensibility. Influenced ',
+      ' in London, focused on Shopify Plus, OS 2.0, Theme App Extensions, Checkout Extensibility. Influenced ',
       w('£35M+ revenue'),
       ' across ',
       w('80+ DTC brands'),
@@ -261,7 +261,7 @@ const shopify: Profile = {
     subtitle: t(
       '5 of 80+ DTC brands', createElement('br'),
       'shipped at ', w('Step Labs'), ' London', createElement('br'),
-      createElement('span', { className: 'text-[#525252]' }, '2024 — 2026'),
+      createElement('span', { className: 'text-[#525252]' }, '2024-2026'),
     ),
     projects: {
       kayelarcky: {
@@ -272,7 +272,7 @@ const shopify: Profile = {
       },
       suji: {
         badge: 'QUIZ · A/B',
-        description: 'Better-for-you noodle brand. Quiz-driven landing flow + 6-week A/B program on the PDP — variant B locked sustained AOV lift via bundle merchandising.',
+        description: 'Better-for-you noodle brand. Quiz-driven landing flow + 6-week A/B program on the PDP, where variant B locked sustained AOV lift via bundle merchandising.',
         tags: ['Checkout Ext.', 'Functions'],
         metric: '+18% AOV',
       },
@@ -306,7 +306,7 @@ const shopify: Profile = {
       description: 'Web development agency serving 7–8 figure DTC brands across UK and US. Shopify Plus, OS 2.0, Theme App Extensions, Checkout Extensibility.',
       bullets: [
         ['Architected storefronts for ', { highlight: '80+ DTC brands' }, ', influencing £35M attributable revenue.'],
-        ['Weekly A/B tests on PDP, cart, checkout — ', { highlight: '+30% uplift' }, ' guaranteed / 90d.'],
+        ['Weekly A/B tests on PDP, cart, checkout with ', { highlight: '+30% uplift' }, ' guaranteed / 90d.'],
         [{ highlight: '+25–40% Lighthouse mobile' }, ' across 10+ themes via LCP / CLS / INP tuning.'],
         ['Integrated 15+ apps via CLI, Admin & Storefront API (GraphQL).'],
       ],

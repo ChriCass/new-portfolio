@@ -24,7 +24,7 @@ const Experience = ({ variant = 'frontend' }: { variant?: Variant }) => {
             >
               <div className="font-mono text-xs text-[#a3a3a3] leading-[1.7]">
                 {exp.dateStart}<br/>
-                <span className="text-[#949494]">— {exp.dateEnd}</span>
+                <span className="text-[#949494]">· {exp.dateEnd}</span>
                 {exp.active && (
                   <><br/><span className="text-[#22c55e] inline-flex items-center gap-1.5 mt-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#22c55e]"></span>{t('experience.active')}</span></>
                 )}

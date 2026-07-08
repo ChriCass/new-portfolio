@@ -106,7 +106,7 @@ const CardInner = ({ card }: { card: Card }) => (
     <div className="flex flex-col gap-4 lg:justify-between items-start mb-3.5">
       <div>
         <div className="font-mono text-[11px] text-[#949494] mb-1.5">
-          {card.id} — {card.year}{card.featured ? ' · FEATURED' : ''}
+          {card.id} · {card.year}{card.featured ? ' · FEATURED' : ''}
         </div>
         <h3 className="text-2xl font-medium tracking-[-0.02em] m-0 text-[#ededed]">{card.title}</h3>
       </div>
@@ -125,7 +125,7 @@ const FeaturedCard = ({ card }: { card: Card }) => (
       <div>
         <div className="flex justify-between items-start mb-4.5">
           <div>
-            <div className="font-mono text-[11px] text-[#949494] mb-1.5">{card.id} — {card.year} · FEATURED</div>
+            <div className="font-mono text-[11px] text-[#949494] mb-1.5">{card.id} · {card.year} · FEATURED</div>
             <h3 className="text-[36px] font-medium tracking-tight m-0 text-[#ededed]">{card.title}</h3>
           </div>
         </div>
