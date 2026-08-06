@@ -75,9 +75,9 @@ const en: TranslationDict = {
   'about.headlineB.shopify': 'bottom line.',
 
   'about.p1.frontend':
-    'Started in 2023 building custom themes for Peruvian agencies: small clients, real deadlines, learning what survives contact with production. Two years later I was leading the UI of a multi-tenant accounting platform; one more, shipping typed React components for DTC founders worldwide.',
+    'Started with custom themes for Peruvian agencies: small clients, real deadlines, learning what survives contact with production. Then leading the UI of a multi-tenant accounting platform, and now shipping typed React components for DTC founders worldwide.',
   'about.p1.shopify':
-    'Started in 2023 building custom WordPress themes for Peruvian agencies. Two years later I was leading a multi-tenant accounting platform with SUNAT integration; one more, shipping Shopify Plus storefronts for DTC founders worldwide.',
+    'Started with custom WordPress themes for Peruvian agencies. Then leading a multi-tenant accounting platform with SUNAT integration, and now shipping Shopify Plus storefronts for DTC founders worldwide.',
 
   'about.p2.frontend':
     'The throughline: interfaces that actually move numbers. Component APIs the next dev enjoys using. Accessible by default. Lighthouse scores that climb because the architecture got simpler, not because something got hidden. PRs that read like writing.',
@@ -130,32 +130,41 @@ const en: TranslationDict = {
   'exp.bullet.frontend.0.2': '+25–40% Lighthouse mobile across 10+ themes via LCP / CLS / INP tuning.',
   'exp.bullet.frontend.0.3': 'Audited and remediated to WCAG 2.1 AA across high-traffic flows.',
 
-  'exp.role.frontend.1': 'UI ENGINEER · AREQUIPA, PE · HYBRID',
-  'exp.company.frontend.1': 'RPU & Asociados',
+  'exp.role.frontend.1': 'FRONTEND DEVELOPER (FREELANCE) · SOMERVILLE, MA · REMOTE',
+  'exp.company.frontend.1': 'MTB Labs',
   'exp.desc.frontend.1':
-    'Accounting firm. Led the frontend of a multi-tenant accounting platform serving 5+ companies with reactive UI built on Livewire + Wire UI, Bootstrap / SCSS design system.',
-  'exp.bullet.frontend.1.0': 'Built real-time cash mgmt UI; cut −70% manual reconciliation.',
-  'exp.bullet.frontend.1.1': 'Stood up a shared SCSS component library across 8 financial modules.',
-  'exp.bullet.frontend.1.2': '−40% UI regression bugs via PR review and component contracts.',
-  'exp.bullet.frontend.1.3': 'Responsive UI across 3+ breakpoints; −25% time-to-rollout.',
+    'Freelance agency partnership. Pixel-perfect UI implementation from Figma across 5+ side projects, complementing full-time role at Step Labs.',
+  'exp.bullet.frontend.1.0': 'Shipped pixel-perfect UI from Figma across 5+ side projects.',
+  'exp.bullet.frontend.1.1': 'Built performance-tuned OS 2.0 sections & metaobject-driven UIs.',
+  'exp.bullet.frontend.1.2': 'Delivered custom Liquid + JS modules async under tight timelines.',
+  'exp.bullet.frontend.1.3': 'Partnered directly with CEO & product team on scoped engagements.',
 
-  'exp.role.frontend.2': 'FRONTEND DEVELOPER · LAMBAYEQUE, PE · REMOTE',
-  'exp.company.frontend.2': 'F5 Solutions',
+  'exp.role.frontend.2': 'UI ENGINEER · AREQUIPA, PE · HYBRID',
+  'exp.company.frontend.2': 'RPU & Asociados',
   'exp.desc.frontend.2':
-    'Edtech. Built the Vue / Inertia UI of an online learning platform powering 50+ courses: course player, dashboard, and content authoring screens.',
-  'exp.bullet.frontend.2.0': 'Shipped Vue 3 + Inertia UI across 50+ courses.',
-  'exp.bullet.frontend.2.1': '−35% content load time via lazy routes & image strategy.',
-  'exp.bullet.frontend.2.2': 'Accessible, responsive UI across 3+ breakpoints.',
-  'exp.bullet.frontend.2.3': '20+ UI features shipped in tight agile sprints.',
+    'Accounting firm. Led the frontend of a multi-tenant accounting platform serving 5+ companies with reactive UI built on Livewire + Wire UI, Bootstrap / SCSS design system.',
+  'exp.bullet.frontend.2.0': 'Built real-time cash mgmt UI; cut −70% manual reconciliation.',
+  'exp.bullet.frontend.2.1': 'Stood up a shared SCSS component library across 8 financial modules.',
+  'exp.bullet.frontend.2.2': '−40% UI regression bugs via PR review and component contracts.',
+  'exp.bullet.frontend.2.3': 'Responsive UI across 3+ breakpoints; −25% time-to-rollout.',
 
-  'exp.role.frontend.3': 'FRONTEND DEVELOPER · PERU · REMOTE',
-  'exp.company.frontend.3': 'Ludik',
+  'exp.role.frontend.3': 'FRONTEND DEVELOPER · LAMBAYEQUE, PE · REMOTE',
+  'exp.company.frontend.3': 'F5 Solutions',
   'exp.desc.frontend.3':
+    'Edtech. Built the Vue / Inertia UI of an online learning platform powering 50+ courses: course player, dashboard, and content authoring screens.',
+  'exp.bullet.frontend.3.0': 'Shipped Vue 3 + Inertia UI across 50+ courses.',
+  'exp.bullet.frontend.3.1': '−35% content load time via lazy routes & image strategy.',
+  'exp.bullet.frontend.3.2': 'Accessible, responsive UI across 3+ breakpoints.',
+  'exp.bullet.frontend.3.3': '20+ UI features shipped in tight agile sprints.',
+
+  'exp.role.frontend.4': 'FRONTEND DEVELOPER · PERU · REMOTE',
+  'exp.company.frontend.4': 'Ludik',
+  'exp.desc.frontend.4':
     'Boutique web studio. Custom themes, SCSS, GSAP. Production sites: Soho Inmobiliaria, Sayers Ophthalmology, No Hay Sin Suerte, Codekillers, Jorge Luna.',
-  'exp.bullet.frontend.3.0': 'Shipped 4+ production frontends end-to-end.',
-  'exp.bullet.frontend.3.1': '+30–50% organic traffic via semantic HTML & technical SEO.',
-  'exp.bullet.frontend.3.2': '+20% avg. retention via 12+ scroll & hover micro-interactions.',
-  'exp.bullet.frontend.3.3': "Built a custom subscription / raffle UI on Jorge Luna's site.",
+  'exp.bullet.frontend.4.0': 'Shipped 4+ production frontends end-to-end.',
+  'exp.bullet.frontend.4.1': '+30–50% organic traffic via semantic HTML & technical SEO.',
+  'exp.bullet.frontend.4.2': '+20% avg. retention via 12+ scroll & hover micro-interactions.',
+  'exp.bullet.frontend.4.3': "Built a custom subscription / raffle UI on Jorge Luna's site.",
 
   'exp.role.shopify.0': 'SHOPIFY DEVELOPER · LONDON, UK · REMOTE',
   'exp.company.shopify.0': 'Step Labs',
@@ -166,32 +175,41 @@ const en: TranslationDict = {
   'exp.bullet.shopify.0.2': '+25–40% Lighthouse mobile across 10+ themes via LCP / CLS / INP tuning.',
   'exp.bullet.shopify.0.3': 'Integrated 15+ apps via CLI, Admin & Storefront API (GraphQL).',
 
-  'exp.role.shopify.1': 'FULL-STACK DEVELOPER · AREQUIPA, PE · HYBRID',
-  'exp.company.shopify.1': 'RPU & Asociados',
+  'exp.role.shopify.1': 'SHOPIFY DEVELOPER (FREELANCE) · SOMERVILLE, MA · REMOTE',
+  'exp.company.shopify.1': 'MTB Labs',
   'exp.desc.shopify.1':
-    'Accounting firm. Led a multi-tenant accounting platform for 5+ companies with SUNAT integration. Laravel MVC + Livewire.',
-  'exp.bullet.shopify.1.0': 'Real-time cash mgmt with Livewire + Wire UI; −70% manual reconciliation.',
-  'exp.bullet.shopify.1.1': 'Designed 30+ normalized SQL schemas across 8 financial modules.',
-  'exp.bullet.shopify.1.2': '−40% regression bugs via Git-based code review workflows.',
-  'exp.bullet.shopify.1.3': 'Responsive Bootstrap / SCSS UI, −25% time-to-rollout.',
+    'Freelance Shopify partnership. Custom theme development and Liquid customizations across 5+ side projects, complementing full-time role at Step Labs.',
+  'exp.bullet.shopify.1.0': 'Delivered custom Shopify theme dev & Liquid work for freelance clients.',
+  'exp.bullet.shopify.1.1': 'Built performance-tuned OS 2.0 sections & metaobject-driven UIs across 5+ projects.',
+  'exp.bullet.shopify.1.2': 'Pixel-perfect implementation from Figma with async delivery.',
+  'exp.bullet.shopify.1.3': 'Partnered directly with CEO & product team on scoped engagements.',
 
-  'exp.role.shopify.2': 'FULL-STACK DEVELOPER · LAMBAYEQUE, PE · REMOTE',
-  'exp.company.shopify.2': 'F5 Solutions',
+  'exp.role.shopify.2': 'FULL-STACK DEVELOPER · AREQUIPA, PE · HYBRID',
+  'exp.company.shopify.2': 'RPU & Asociados',
   'exp.desc.shopify.2':
-    'Edtech. Built an online learning platform powering 50+ courses. Laravel + Vue.js + Inertia.js.',
-  'exp.bullet.shopify.2.0': 'Shipped monolithic Laravel + Inertia stack across 50+ courses.',
-  'exp.bullet.shopify.2.1': '−35% content load time via query tuning on 15+ tables.',
-  'exp.bullet.shopify.2.2': 'Accessible, responsive UI across 3+ breakpoints.',
-  'exp.bullet.shopify.2.3': '20+ features shipped in tight agile sprints.',
+    'Accounting firm. Led a multi-tenant accounting platform for 5+ companies with SUNAT integration. Laravel MVC + Livewire.',
+  'exp.bullet.shopify.2.0': 'Real-time cash mgmt with Livewire + Wire UI; −70% manual reconciliation.',
+  'exp.bullet.shopify.2.1': 'Designed 30+ normalized SQL schemas across 8 financial modules.',
+  'exp.bullet.shopify.2.2': '−40% regression bugs via Git-based code review workflows.',
+  'exp.bullet.shopify.2.3': 'Responsive Bootstrap / SCSS UI, −25% time-to-rollout.',
 
-  'exp.role.shopify.3': 'FRONTEND DEVELOPER · PERU · REMOTE',
-  'exp.company.shopify.3': 'Ludik',
+  'exp.role.shopify.3': 'FULL-STACK DEVELOPER · LAMBAYEQUE, PE · REMOTE',
+  'exp.company.shopify.3': 'F5 Solutions',
   'exp.desc.shopify.3':
+    'Edtech. Built an online learning platform powering 50+ courses. Laravel + Vue.js + Inertia.js.',
+  'exp.bullet.shopify.3.0': 'Shipped monolithic Laravel + Inertia stack across 50+ courses.',
+  'exp.bullet.shopify.3.1': '−35% content load time via query tuning on 15+ tables.',
+  'exp.bullet.shopify.3.2': 'Accessible, responsive UI across 3+ breakpoints.',
+  'exp.bullet.shopify.3.3': '20+ features shipped in tight agile sprints.',
+
+  'exp.role.shopify.4': 'FRONTEND DEVELOPER · PERU · REMOTE',
+  'exp.company.shopify.4': 'Ludik',
+  'exp.desc.shopify.4':
     'Boutique web studio. WordPress, PHP, ACF. Production sites: Soho Inmobiliaria, Sayers Ophthalmology, No Hay Sin Suerte, Codekillers, Jorge Luna.',
-  'exp.bullet.shopify.3.0': 'Shipped 4+ production WordPress sites end-to-end.',
-  'exp.bullet.shopify.3.1': '+30–50% organic traffic via technical SEO on 4+ clients.',
-  'exp.bullet.shopify.3.2': '+20% avg. retention via 12+ interactive animations.',
-  'exp.bullet.shopify.3.3': "Custom subscription / raffle module on Jorge Luna's WP site.",
+  'exp.bullet.shopify.4.0': 'Shipped 4+ production WordPress sites end-to-end.',
+  'exp.bullet.shopify.4.1': '+30–50% organic traffic via technical SEO on 4+ clients.',
+  'exp.bullet.shopify.4.2': '+20% avg. retention via 12+ interactive animations.',
+  'exp.bullet.shopify.4.3': "Custom subscription / raffle module on Jorge Luna's WP site.",
 }
 
 const es: TranslationDict = {
@@ -267,9 +285,9 @@ const es: TranslationDict = {
   'about.headlineB.shopify': 'resultado final.',
 
   'about.p1.frontend':
-    'Comencé en 2023 creando temas personalizados para agencias peruanas: clientes pequeños, plazos reales, aprendiendo lo que sobrevive al contacto con producción. Dos años después lideraba la UI de una plataforma contable multi-tenant; uno más, desarrollando componentes React tipados para founders DTC alrededor del mundo.',
+    'Comencé creando temas personalizados para agencias peruanas: clientes pequeños, plazos reales, aprendiendo lo que sobrevive al contacto con producción. Después lideré la UI de una plataforma contable multi-tenant, y ahora desarrollo componentes React tipados para founders DTC alrededor del mundo.',
   'about.p1.shopify':
-    'Comencé en 2023 creando temas WordPress personalizados para agencias peruanas. Dos años después lideraba una plataforma contable multi-tenant con integración SUNAT; uno más, desarrollando storefronts Shopify Plus para founders DTC alrededor del mundo.',
+    'Comencé creando temas WordPress personalizados para agencias peruanas. Después lideré una plataforma contable multi-tenant con integración SUNAT, y ahora desarrollo storefronts Shopify Plus para founders DTC alrededor del mundo.',
 
   'about.p2.frontend':
     'El hilo conductor: interfaces que realmente mueven números. APIs de componentes que el siguiente dev disfruta usar. Accesible por defecto. Scores de Lighthouse que suben porque la arquitectura se simplificó, no porque algo se ocultó. PRs que se leen como escritura.',
@@ -322,32 +340,41 @@ const es: TranslationDict = {
   'exp.bullet.frontend.0.2': '+25–40% Lighthouse móvil en más de 10 temas mediante optimización de LCP / CLS / INP.',
   'exp.bullet.frontend.0.3': 'Audité y corregí para cumplir WCAG 2.1 AA en flujos de alto tráfico.',
 
-  'exp.role.frontend.1': 'UI ENGINEER · AREQUIPA, PE · HÍBRIDO',
-  'exp.company.frontend.1': 'RPU & Asociados',
+  'exp.role.frontend.1': 'FRONTEND DEVELOPER (FREELANCE) · SOMERVILLE, MA · REMOTO',
+  'exp.company.frontend.1': 'MTB Labs',
   'exp.desc.frontend.1':
-    'Firma contable. Lideré el frontend de una plataforma contable multi-tenant para más de 5 empresas con UI reactiva basada en Livewire + Wire UI, design system Bootstrap / SCSS.',
-  'exp.bullet.frontend.1.0': 'Construí UI de gestión de caja en tiempo real; reduje −70% la conciliación manual.',
-  'exp.bullet.frontend.1.1': 'Creé una librería compartida de componentes SCSS para 8 módulos financieros.',
-  'exp.bullet.frontend.1.2': '−40% bugs de regresión UI mediante revisión de PRs y contratos de componentes.',
-  'exp.bullet.frontend.1.3': 'UI responsive en más de 3 breakpoints; −25% tiempo de despliegue.',
+    'Colaboración freelance con agencia. Implementación UI pixel-perfect desde Figma en más de 5 proyectos paralelos, complementando el rol full-time en Step Labs.',
+  'exp.bullet.frontend.1.0': 'Entregué UI pixel-perfect desde Figma en más de 5 proyectos paralelos.',
+  'exp.bullet.frontend.1.1': 'Construí secciones OS 2.0 con performance optimizada y UIs basadas en metaobjects.',
+  'exp.bullet.frontend.1.2': 'Desarrollé módulos custom en Liquid + JS de forma asíncrona bajo plazos ajustados.',
+  'exp.bullet.frontend.1.3': 'Colaboré directamente con CEO y equipo de producto en engagements definidos.',
 
-  'exp.role.frontend.2': 'FRONTEND DEVELOPER · LAMBAYEQUE, PE · REMOTO',
-  'exp.company.frontend.2': 'F5 Solutions',
+  'exp.role.frontend.2': 'UI ENGINEER · AREQUIPA, PE · HÍBRIDO',
+  'exp.company.frontend.2': 'RPU & Asociados',
   'exp.desc.frontend.2':
-    'Edtech. Construí la UI Vue / Inertia de una plataforma de aprendizaje online con más de 50 cursos: reproductor de cursos, dashboard y pantallas de creación de contenido.',
-  'exp.bullet.frontend.2.0': 'Desarrollé UI con Vue 3 + Inertia para más de 50 cursos.',
-  'exp.bullet.frontend.2.1': '−35% tiempo de carga de contenido mediante rutas lazy y estrategia de imágenes.',
-  'exp.bullet.frontend.2.2': 'UI accesible y responsive en más de 3 breakpoints.',
-  'exp.bullet.frontend.2.3': 'Más de 20 funcionalidades de UI entregadas en sprints ágiles.',
+    'Firma contable. Lideré el frontend de una plataforma contable multi-tenant para más de 5 empresas con UI reactiva basada en Livewire + Wire UI, design system Bootstrap / SCSS.',
+  'exp.bullet.frontend.2.0': 'Construí UI de gestión de caja en tiempo real; reduje −70% la conciliación manual.',
+  'exp.bullet.frontend.2.1': 'Creé una librería compartida de componentes SCSS para 8 módulos financieros.',
+  'exp.bullet.frontend.2.2': '−40% bugs de regresión UI mediante revisión de PRs y contratos de componentes.',
+  'exp.bullet.frontend.2.3': 'UI responsive en más de 3 breakpoints; −25% tiempo de despliegue.',
 
-  'exp.role.frontend.3': 'FRONTEND DEVELOPER · PERÚ · REMOTO',
-  'exp.company.frontend.3': 'Ludik',
+  'exp.role.frontend.3': 'FRONTEND DEVELOPER · LAMBAYEQUE, PE · REMOTO',
+  'exp.company.frontend.3': 'F5 Solutions',
   'exp.desc.frontend.3':
+    'Edtech. Construí la UI Vue / Inertia de una plataforma de aprendizaje online con más de 50 cursos: reproductor de cursos, dashboard y pantallas de creación de contenido.',
+  'exp.bullet.frontend.3.0': 'Desarrollé UI con Vue 3 + Inertia para más de 50 cursos.',
+  'exp.bullet.frontend.3.1': '−35% tiempo de carga de contenido mediante rutas lazy y estrategia de imágenes.',
+  'exp.bullet.frontend.3.2': 'UI accesible y responsive en más de 3 breakpoints.',
+  'exp.bullet.frontend.3.3': 'Más de 20 funcionalidades de UI entregadas en sprints ágiles.',
+
+  'exp.role.frontend.4': 'FRONTEND DEVELOPER · PERÚ · REMOTO',
+  'exp.company.frontend.4': 'Ludik',
+  'exp.desc.frontend.4':
     'Estudio web boutique. Temas personalizados, SCSS, GSAP. Sitios en producción: Soho Inmobiliaria, Sayers Ophthalmology, No Hay Sin Suerte, Codekillers, Jorge Luna.',
-  'exp.bullet.frontend.3.0': 'Entregué más de 4 frontends en producción de principio a fin.',
-  'exp.bullet.frontend.3.1': '+30–50% tráfico orgánico mediante HTML semántico y SEO técnico.',
-  'exp.bullet.frontend.3.2': '+20% retención promedio mediante más de 12 micro-interacciones de scroll y hover.',
-  'exp.bullet.frontend.3.3': 'Construí una UI personalizada de suscripción / rifa para el sitio de Jorge Luna.',
+  'exp.bullet.frontend.4.0': 'Entregué más de 4 frontends en producción de principio a fin.',
+  'exp.bullet.frontend.4.1': '+30–50% tráfico orgánico mediante HTML semántico y SEO técnico.',
+  'exp.bullet.frontend.4.2': '+20% retención promedio mediante más de 12 micro-interacciones de scroll y hover.',
+  'exp.bullet.frontend.4.3': 'Construí una UI personalizada de suscripción / rifa para el sitio de Jorge Luna.',
 
   'exp.role.shopify.0': 'SHOPIFY DEVELOPER · LONDRES, UK · REMOTO',
   'exp.company.shopify.0': 'Step Labs',
@@ -358,32 +385,41 @@ const es: TranslationDict = {
   'exp.bullet.shopify.0.2': '+25–40% Lighthouse móvil en más de 10 temas mediante optimización de LCP / CLS / INP.',
   'exp.bullet.shopify.0.3': 'Integré más de 15 apps mediante CLI, Admin y Storefront API (GraphQL).',
 
-  'exp.role.shopify.1': 'FULL-STACK DEVELOPER · AREQUIPA, PE · HÍBRIDO',
-  'exp.company.shopify.1': 'RPU & Asociados',
+  'exp.role.shopify.1': 'SHOPIFY DEVELOPER (FREELANCE) · SOMERVILLE, MA · REMOTO',
+  'exp.company.shopify.1': 'MTB Labs',
   'exp.desc.shopify.1':
-    'Firma contable. Lideré una plataforma contable multi-tenant para más de 5 empresas con integración SUNAT. Laravel MVC + Livewire.',
-  'exp.bullet.shopify.1.0': 'Gestión de caja en tiempo real con Livewire + Wire UI; −70% conciliación manual.',
-  'exp.bullet.shopify.1.1': 'Diseñé más de 30 esquemas SQL normalizados para 8 módulos financieros.',
-  'exp.bullet.shopify.1.2': '−40% bugs de regresión mediante flujos de code review basados en Git.',
-  'exp.bullet.shopify.1.3': 'UI responsive Bootstrap / SCSS, −25% tiempo de despliegue.',
+    'Colaboración freelance con agencia Shopify. Desarrollo custom de temas y personalizaciones en Liquid en más de 5 proyectos, complementando el rol full-time en Step Labs.',
+  'exp.bullet.shopify.1.0': 'Entregué desarrollo custom de temas Shopify y trabajo en Liquid para clientes freelance.',
+  'exp.bullet.shopify.1.1': 'Construí secciones OS 2.0 con performance optimizada y UIs basadas en metaobjects en más de 5 proyectos.',
+  'exp.bullet.shopify.1.2': 'Implementación pixel-perfect desde Figma con entrega asíncrona.',
+  'exp.bullet.shopify.1.3': 'Colaboré directamente con CEO y equipo de producto en engagements definidos.',
 
-  'exp.role.shopify.2': 'FULL-STACK DEVELOPER · LAMBAYEQUE, PE · REMOTO',
-  'exp.company.shopify.2': 'F5 Solutions',
+  'exp.role.shopify.2': 'FULL-STACK DEVELOPER · AREQUIPA, PE · HÍBRIDO',
+  'exp.company.shopify.2': 'RPU & Asociados',
   'exp.desc.shopify.2':
-    'Edtech. Construí una plataforma de aprendizaje online para más de 50 cursos. Laravel + Vue.js + Inertia.js.',
-  'exp.bullet.shopify.2.0': 'Desarrollé un stack monolítico Laravel + Inertia para más de 50 cursos.',
-  'exp.bullet.shopify.2.1': '−35% tiempo de carga mediante optimización de consultas en más de 15 tablas.',
-  'exp.bullet.shopify.2.2': 'UI accesible y responsive en más de 3 breakpoints.',
-  'exp.bullet.shopify.2.3': 'Más de 20 funcionalidades entregadas en sprints ágiles.',
+    'Firma contable. Lideré una plataforma contable multi-tenant para más de 5 empresas con integración SUNAT. Laravel MVC + Livewire.',
+  'exp.bullet.shopify.2.0': 'Gestión de caja en tiempo real con Livewire + Wire UI; −70% conciliación manual.',
+  'exp.bullet.shopify.2.1': 'Diseñé más de 30 esquemas SQL normalizados para 8 módulos financieros.',
+  'exp.bullet.shopify.2.2': '−40% bugs de regresión mediante flujos de code review basados en Git.',
+  'exp.bullet.shopify.2.3': 'UI responsive Bootstrap / SCSS, −25% tiempo de despliegue.',
 
-  'exp.role.shopify.3': 'FRONTEND DEVELOPER · PERÚ · REMOTO',
-  'exp.company.shopify.3': 'Ludik',
+  'exp.role.shopify.3': 'FULL-STACK DEVELOPER · LAMBAYEQUE, PE · REMOTO',
+  'exp.company.shopify.3': 'F5 Solutions',
   'exp.desc.shopify.3':
+    'Edtech. Construí una plataforma de aprendizaje online para más de 50 cursos. Laravel + Vue.js + Inertia.js.',
+  'exp.bullet.shopify.3.0': 'Desarrollé un stack monolítico Laravel + Inertia para más de 50 cursos.',
+  'exp.bullet.shopify.3.1': '−35% tiempo de carga mediante optimización de consultas en más de 15 tablas.',
+  'exp.bullet.shopify.3.2': 'UI accesible y responsive en más de 3 breakpoints.',
+  'exp.bullet.shopify.3.3': 'Más de 20 funcionalidades entregadas en sprints ágiles.',
+
+  'exp.role.shopify.4': 'FRONTEND DEVELOPER · PERÚ · REMOTO',
+  'exp.company.shopify.4': 'Ludik',
+  'exp.desc.shopify.4':
     'Estudio web boutique. WordPress, PHP, ACF. Sitios en producción: Soho Inmobiliaria, Sayers Ophthalmology, No Hay Sin Suerte, Codekillers, Jorge Luna.',
-  'exp.bullet.shopify.3.0': 'Entregué más de 4 sitios WordPress en producción de principio a fin.',
-  'exp.bullet.shopify.3.1': '+30–50% tráfico orgánico mediante SEO técnico en más de 4 clientes.',
-  'exp.bullet.shopify.3.2': '+20% retención promedio mediante más de 12 animaciones interactivas.',
-  'exp.bullet.shopify.3.3': 'Módulo personalizado de suscripción / rifa en el sitio WP de Jorge Luna.',
+  'exp.bullet.shopify.4.0': 'Entregué más de 4 sitios WordPress en producción de principio a fin.',
+  'exp.bullet.shopify.4.1': '+30–50% tráfico orgánico mediante SEO técnico en más de 4 clientes.',
+  'exp.bullet.shopify.4.2': '+20% retención promedio mediante más de 12 animaciones interactivas.',
+  'exp.bullet.shopify.4.3': 'Módulo personalizado de suscripción / rifa en el sitio WP de Jorge Luna.',
 }
 
 const translations: Record<Lang, TranslationDict> = { en, es }

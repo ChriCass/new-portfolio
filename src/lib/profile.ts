@@ -104,7 +104,7 @@ const frontend: Profile = {
     headlineA: 'A frontend engineer who treats',
     headlineB: 'the UI as a product.',
     paragraphs: [
-      'Started in 2023 building custom themes for Peruvian agencies: small clients, real deadlines, learning what survives contact with production. Two years later I was leading the UI of a multi-tenant accounting platform; one more, shipping typed React components for British DTC founders at 3am London time.',
+      'Started with custom themes for Peruvian agencies: small clients, real deadlines, learning what survives contact with production. Then leading the UI of a multi-tenant accounting platform, and now shipping typed React components for British DTC founders at 3am London time.',
       t(
         'The throughline: interfaces that ',
         w('actually move numbers'),
@@ -165,6 +165,20 @@ const frontend: Profile = {
         ['Authored ', { highlight: '200+ reusable components' }, ' with typed APIs and Storybook docs.'],
         [{ highlight: '+25–40% Lighthouse mobile' }, ' across 10+ themes via LCP / CLS / INP tuning.'],
         ['Audited and remediated to ', { highlight: 'WCAG 2.1 AA' }, ' across high-traffic flows.'],
+      ],
+    },
+    {
+      dateStart: 'DEC 2024',
+      dateEnd: 'PRESENT',
+      active: true,
+      role: 'FRONTEND DEVELOPER (FREELANCE) · SOMERVILLE, MA · REMOTE',
+      company: 'MTB Labs',
+      description: 'Freelance agency partnership. Pixel-perfect UI implementation from Figma across 5+ side projects, complementing full-time role at Step Labs.',
+      bullets: [
+        ['Shipped ', { highlight: 'pixel-perfect UI from Figma' }, ' across 5+ side projects.'],
+        ['Built performance-tuned ', { highlight: 'OS 2.0 sections & metaobject-driven UIs' }, '.'],
+        ['Delivered custom Liquid + JS modules async under ', { highlight: 'tight timelines' }, '.'],
+        ['Partnered directly with ', { highlight: 'CEO & product team' }, ' on scoped engagements.'],
       ],
     },
     {
@@ -248,7 +262,7 @@ const shopify: Profile = {
     headlineA: 'A developer who treats',
     headlineB: 'commerce as a craft.',
     paragraphs: [
-      'Started in 2023 building custom WordPress themes for Peruvian agencies. Two years later I was leading a multi-tenant accounting platform with SUNAT integration; one more, shipping Shopify Plus storefronts for British DTC founders at 3am London time.',
+      'Started with custom WordPress themes for Peruvian agencies. Then leading a multi-tenant accounting platform with SUNAT integration, and now shipping Shopify Plus storefronts for British DTC founders at 3am London time.',
       t(
         'The throughline: code that ',
         w('actually moves numbers'),
@@ -309,6 +323,20 @@ const shopify: Profile = {
         ['Weekly A/B tests on PDP, cart, checkout with ', { highlight: '+30% uplift' }, ' guaranteed / 90d.'],
         [{ highlight: '+25–40% Lighthouse mobile' }, ' across 10+ themes via LCP / CLS / INP tuning.'],
         ['Integrated 15+ apps via CLI, Admin & Storefront API (GraphQL).'],
+      ],
+    },
+    {
+      dateStart: 'DEC 2024',
+      dateEnd: 'PRESENT',
+      active: true,
+      role: 'SHOPIFY DEVELOPER (FREELANCE) · SOMERVILLE, MA · REMOTE',
+      company: 'MTB Labs',
+      description: 'Freelance Shopify partnership. Custom theme development and Liquid customizations across 5+ side projects, complementing full-time role at Step Labs.',
+      bullets: [
+        ['Delivered custom ', { highlight: 'Shopify theme dev & Liquid work' }, ' for freelance clients.'],
+        ['Built performance-tuned ', { highlight: 'OS 2.0 sections & metaobject-driven UIs' }, ' across 5+ projects.'],
+        [{ highlight: 'Pixel-perfect implementation' }, ' from Figma with async delivery.'],
+        ['Partnered directly with ', { highlight: 'CEO & product team' }, ' on scoped engagements.'],
       ],
     },
     {
