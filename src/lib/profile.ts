@@ -116,7 +116,7 @@ const frontend: Profile = {
   selectedWork: {
     subtitle: t(
       '5 frontends shipped to', createElement('br'),
-      'production at ', w('Step Labs'), ' London', createElement('br'),
+      'production for ', w('DTC brands'), createElement('br'),
       createElement('span', { className: 'text-[#525252]' }, '2024-2026'),
     ),
     projects: {
@@ -273,8 +273,8 @@ const shopify: Profile = {
   },
   selectedWork: {
     subtitle: t(
-      '5 of 80+ DTC brands', createElement('br'),
-      'shipped at ', w('Step Labs'), ' London', createElement('br'),
+      '5 of 80+ ', w('DTC brands'), createElement('br'),
+      'shipped to production', createElement('br'),
       createElement('span', { className: 'text-[#525252]' }, '2024-2026'),
     ),
     projects: {

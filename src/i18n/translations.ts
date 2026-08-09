@@ -85,9 +85,9 @@ const en: TranslationDict = {
     'The throughline: code that actually moves numbers. A/B tests that lock in conversion. Liquid that the next dev can read. PRs reviewed line by line. The boring stuff that compounds.',
 
   'selectedWork.subtitle.frontend':
-    '5 frontends shipped to production at Step Labs London 2024-2026',
+    '5 frontends shipped to production for DTC brands 2024-2026',
   'selectedWork.subtitle.shopify':
-    '5 of 80+ DTC brands shipped at Step Labs London 2024-2026',
+    '5 of 80+ DTC brands shipped to production 2024-2026',
 
   'project.kayelarcky.desc.frontend':
     'Premium bralettes brand. Implemented collection page A/B tests (reviews-between-products variant), rebuilt PDPs for accessibility (95% score), and shipped wholesale partner portal. Drove CRO improvements off Clarity data: CVR +769%, sessions +83%, AOV +15% period-over-period.',
@@ -295,9 +295,9 @@ const es: TranslationDict = {
     'El hilo conductor: código que realmente mueve números. A/B tests que aseguran conversión. Liquid que el siguiente dev puede leer. PRs revisados línea por línea. Lo aburrido que genera resultados.',
 
   'selectedWork.subtitle.frontend':
-    '5 frontends lanzados a producción en Step Labs Londres 2024-2026',
+    '5 frontends lanzados a producción para marcas DTC 2024-2026',
   'selectedWork.subtitle.shopify':
-    '5 de 80+ marcas DTC lanzadas en Step Labs Londres 2024-2026',
+    '5 de 80+ marcas DTC lanzadas a producción 2024-2026',
 
   'project.kayelarcky.desc.frontend':
     'Marca premium de bralettes. Implementé A/B tests en collection pages, reconstruí PDPs accesibles (95% score) y desarrollé un portal para wholesale partners. Optimicé CRO basado en datos de Clarity: CVR +769%, sesiones +83%, AOV +15% período contra período.',
